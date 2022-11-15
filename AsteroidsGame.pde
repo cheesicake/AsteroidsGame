@@ -1,10 +1,18 @@
-//your variable declarations here
+Star[] dazzlers;
 public void setup() 
 {
-  //your code here
+  background(0);
+  size(500, 500);
+  dazzlers = new Star[200];
+  for(int n = 0; n < dazzlers.length; n++)
+  {
+    dazzlers[n] = new Star();
+  }
 }
 public void draw() 
 {
-  //your code here
+  for(int n = 0; n < dazzlers.length; n++)
+  {
+    dazzlers[n].show();
+  }
 }
-
