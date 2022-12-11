@@ -7,7 +7,10 @@ class Floater //Do NOT modify the Floater class! Make changes in the Spaceship c
   protected double myCenterX, myCenterY; //holds center coordinates   
   protected double myXspeed, myYspeed; //holds the speed of travel in the x and y directions   
   protected double myPointDirection; //holds current direction the ship is pointing in degrees    
-
+  
+  public double getX() {return this.myCenterX;}
+  public double getY() {return this.myCenterY;}
+  public double getPointDirection() {return myPointDirection;}
   //Accelerates the floater in the direction it is pointing (myPointDirection)   
   public void accelerate (double dAmount)   
   {          
@@ -17,8 +20,7 @@ class Floater //Do NOT modify the Floater class! Make changes in the Spaceship c
     myXspeed += ((dAmount) * Math.cos(dRadians));    
     myYspeed += ((dAmount) * Math.sin(dRadians));       
   }   
-  public void turn (double degreesOfRotation)   
-  {     
+  public void turn(double degreesOfRotation) {     
     //rotates the floater by a given number of degrees    
     myPointDirection+=degreesOfRotation;   
   }   
