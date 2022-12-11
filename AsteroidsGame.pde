@@ -23,8 +23,6 @@ public void setup()
 public void draw() 
 {
   background(0);
-    System.out.println(pew.size());
-
   for(int n = 0; n < dazzlers.length; n++)
   {
     dazzlers[n].show();
